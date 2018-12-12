@@ -73,6 +73,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 
+# Marty's Favorite Cheat Code
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/libdisplayenginesvc_1_0.so|libshims_hwsmartdisplay_jni.so \
